@@ -33,6 +33,8 @@ public class OrderItem {
        orderItem.setItem(item);
        orderItem.setOrderPrice(orderPrice);
        orderItem.setCount(count);
+       //나중에 지울 것
+       orderItem.getItem();
 
        item.removeStock(count);
        return orderItem;
@@ -50,6 +52,8 @@ public class OrderItem {
      * 주문 상품전체 조회 로직
      */
     public int getTotalPrice() {
+
         return getOrderPrice() * getCount();
+        //1월1일커밋
     }
 }
