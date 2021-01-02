@@ -33,8 +33,6 @@ public class OrderItem {
        orderItem.setItem(item);
        orderItem.setOrderPrice(orderPrice);
        orderItem.setCount(count);
-       //나중에 지울 것
-       orderItem.getItem();
 
        item.removeStock(count);
        return orderItem;
